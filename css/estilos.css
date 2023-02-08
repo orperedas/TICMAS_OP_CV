@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu&display=swap&wght@400');
+
+
+/* Variables de colore */
+
+:root{
+    --color1: #EDEAE8;
+    --color2: #FBF9F7;
+    --color3: #ffffff;
+    --color4: #235B3F;
+    --color5: #111111;
+    --color6: #CFE6DD;
+    --color7: rgba(0,0,0,0.35)
+}
+
+
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Reglas para etiquetas */
+
+a{
+    color: var(--color4)
+}
+body{
+    background-color: var(--color1);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    color: var(--color5);
+    
+}
+
+button{
+    display: inline-block;
+    margin: 0 auto;
+}
+
+footer,
+header,
+main{
+    padding: 1em 0;
+}
+
+header{
+    background-color: var(--color4);
+    color: var(--color2)
+}
+
+h1, h2{
+    margin: 0.5em 0 0.35em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+h2, h3{
+    color: var(--color4);
+}
+h1{
+    font-size: 1.75em;
+}
+h2{
+    font-size: 1.4em;
+}
+h3{
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+}
+
+li{
+    margin-left: 3em;
+    list-style-position: initial;
+    list-style-type: disc;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    height: 2.5em;
+    width: 100vw;
+    text-align: center;
+}
+nav ul>li{
+    display: inline-block;
+    margin: 0;
+    padding: 0 0.1em;
+    list-style-position: initial;
+    list-style-type: none;
+    
+}
+nav a{
+    display: inline-block;
+    padding: 0.5em 0.75em;
+    color: var(--color2);
+}
+nav li>a:hover,
+nav li>a:focus{
+    border-bottom: solid var(--color3) 0.2em;
+    background-color: var(--color7);
+    color: var(--color3);
+}
+
+p{
+    margin: 0.5em 0;
+}
+
+
+/* Reglas para clases */
+
+.btn_mas_cursos, .btn_mas_trabajos{
+    margin: 1em 0;
+    padding: 0.35em 0.75em;
+    border: none;
+    border-radius: 0.3em;
+    background-color: var(--color4);
+    color: var(--color2);
+    font-size: 1em;
+}
+
+.contenido{
+    margin: 1em 0;
+    max-width: 1200px;
+}
+.contenido_seccion{
+    margin: 1em 0;
+    padding: 1em 2em;
+    background-color: var(--color2);
+}
+
+.curso, .trabajo{
+    padding: 1em 0;
+    border-bottom: solid var(--color4) 0.1em;
+}
+.curso:nth-last-child(1),
+.trabajo:nth-last-child(1){
+    border-bottom: none;
+}
+.cursos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.curso{
+    display: flex;
+    flex-direction: row;
+    width: 47.5%;
+}
+.curso_info{
+    padding-left: 1.5em;
+}
+.curso_logo{
+    border-radius: 100%;
+    width: 3.25em;
+    height: 3.25em;
+}
+.curso_anterior,
+.trabajo_anterior{
+    display: none;
+}
+
+.habilidades ul,
+.hobbies ul{
+    text-align: center;
+}
+.habilidades li,
+.hobbies li{
+    display: inline-block;
+    margin: 0.2em 0.1em;
+    padding: 0.3em 0.6em;
+    border-radius: 1em;
+    background-color: var(--color6);
+    list-style-type: none;
+    font-weight: 500;
+    text-align: center;
+}
+
+.intro{
+    margin-top: 0;
+    padding: 1em 15% 0;
+    text-align: center;
+}
+.intro_img{
+    height: 7.5em;
+    width: 7.5em;
+    border: solid var(--color3) 0.2em;
+    border-radius: 100%;
+}
+
+.nav_fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color4);
+}
+
+.trabajo{
+    margin: 1em 0;
+}
+
+.texto_intro{
+    margin-bottom: 0;
+    font-size: 1.15em;
+}
+
+.titulo{
+    padding-top: 2em;
+}
+
+
+/* Reglas para identificadores */
+
+#menu{
+    display: none;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 720px) {
+    header,
+    main{
+        padding: 1em 7.5%;
+    }
+    nav, .contenido{
+        margin: 0;
+        padding: 0;
+    }
+    nav ul>li{
+        display: block;
+        padding: 0;
+    }
+    nav a{
+        padding: 0.5em 0.5em;
+    }
+
+    .contenido_seccion{
+        margin: 1em 0;
+    }
+    .curso{
+        width: 100%;
+    }
+    .intro{
+        padding: 1em 1em;
+    }
+    .intro_img{
+        height: 8.5em;
+        width: 8.5em;
+    }
+}
+
+@media (max-width: 576px) {
+    header,   
+    main{
+    padding: 0.5em 0.25%;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+    }
+    h1{
+        font-size: 2em;
+    }
+    .intro_img{
+        height: 15em;
+        width: 15em;
+    }
+
+    .nav_fixed{
+        top: 2.5em;
+        padding-left: 2.5em;
+        width: 50vw;
+        text-align: left;
+    }
+    .nav_fixed li{
+        width: 100%;
+        background-color: var(--color4);
+    }
+    .nav_fixed a{
+        width: 100%;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    #menu{
+        position: fixed;
+        display: inline;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding: 0.3em 1em 0.3em;
+        background-color: var(--color4);
+        font-size: 1.1em;
+        font-weight: bold;
+        line-height: 1.8em;
+    }
+    #menu_check:not(:checked) ~ nav{
+        display: none;
+    }
+    #menu_check:checked ~ nav{
+        position: fixed;
+        display: block;
+        top: 2.5em;
+        left: 0;
+        height: 100%;
+    }
+    #menu #menu_abrir,
+    #menu #menu_cerrar{
+        padding: 0.2em 0.6em;
+        border-radius: 0.5em;
+        border: solid var(--color3) 0.1em;
+    }
+    #menu #menu_cerrar{
+        display: none;
+    }
+    #menu_check:checked ~ label>#menu_abrir{
+        display: none;
+    }
+    #menu_check:checked ~ label>#menu_cerrar{
+        display: inline;
+    }
+    #menu #menu_abrir:hover,
+    #menu #menu_cerrar:hover,
+    #menu #menu_abrir:focus,
+    #menu #menu_cerrar:focus{
+        background-color: var(--color3);
+        color: var(--color4);
+        border: solid var(--color6) 0.1em;
+    }
+}

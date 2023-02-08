@@ -5,191 +5,223 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Otto Pereda - mi CV</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li class="item_nav"><a href="academico"></a>Académico</li>
-                <li class="item_nav"><a href="laboral"></a>Historia laboral</li>
-                <li class="item_nav"><a href="cursos"></a>Cursos</li>
-                <li class="item_nav"><a href="habilidades"></a>Habilidades</li>
-                <li class="item_nav"><a href="hobbies"></a>Habilidades</li>
+        <input type="checkbox" id="menu_check">
+        <label for="menu_check" id="menu">
+            <span id="menu_abrir">&#9776; Menú</span>
+            <span id="menu_cerrar">X</span>
+        </label>
+        <nav class="nav_fixed">
+            <ul class="lista">
+                <li class="item_nav"><a href="#academico">Académico</a></li>
+                <li class="item_nav"><a href="#laboral">Historia laboral</a></li>
+                <li class="item_nav"><a href="#cursos">Cursos</a></li>
+                <li class="item_nav"><a href="#habilidades">Habilidades</a></li>
+                <li class="item_nav"><a href="#hobbies">Hobbies</a></li>
             </ul>
         </nav>
-    </header>
-    <main>
         <article class="intro">
             <figure>
-                <img src="" alt="">
+                <img class="intro_img" src="img/Otto Pereda.png" alt="">
             </figure>
             <h1>Otto Pereda</h1>
-            <p>Bachiller en Ciencias y Letras – Instructor de Informática – Asesoría en Inserción laboral y Adaptación a Puestos de Trabajo para PCD – Autoformación en Diseño, Desarrollo y Accesibilidad Web – Testeos de accesibilidad y Usabilidad Web.</p>
+            <p class="texto_intro">Bachiller en Ciencias y Letras – Instructor de Informática – Asesoría en Inserción laboral y Adaptación a Puestos de Trabajo para PCD – Autoformación en Diseño, Desarrollo y Accesibilidad Web – Testeos de accesibilidad y Usabilidad Web.</p>
         </article>
+    </header>
+    <main>
         <article class="contenido">
-            <section class="seccion_contenido">
+            <section class="contenido_seccion">
                 <h2 id="academico">Mi Título</h2>
-                <h3>Bachiller en Ciencias y Letras</h3>
+                <h3 class="titulo">Bachiller en Ciencias y Letras</h3>
                 <p>Instituto Guillermo Putzeys Álvarez. Ciudad de Guatemala 1997 - 1998</p>
             </section>
-            <section class="seccion_contenido">
+            <section class="contenido_seccion">
                 <h2 id="laboral">Mi Historia Laboral</h2>
-                <article class="trabajo trabajo_actual">
-                    <h3 class="titulo_trabajo">Profesor de Informática (Microsoft Office niveles básico e intermedio)</h3>
-                    <p class="descipcion_trabajo">2020 abril a la fecha. Programa ÁGORA Argentina. Buenos Aires, Argentina.</p>
-                    <ul>
-                        <li>Formulación de propuestas formativas</li>
-                        <li>Impartición de clases</li>
-                        <li>Creación de contenidos teórico-prácticos</li>
-                        <li>Evaluación de participantes</li>
-                        <li>Rendición de informe cursos</li>
-                    </ul>
-                </article>
-                <article class="trabajo trabajo_anterior">
-                    <h3 class="titulo_trabajo">Asesor, Facilitador y Técnico (Freelance) en informática y herramientas informáticas para ciegos, Diseño, Maquedatoción y Accesibilidad Web</h3>
-                    <p class="descipcion_trabajo">2014 a la fecha. Argentina / Venezuela / Guatemala</p>
-                    <ul>
-                        <li>Asesoramiento en el uso de herramientas tecnológicas para ciegos</li>
-                        <li>Facilitación de cursos de informática de nivel inicial e intermedio</li>
-                        <li>Testeos y Asesorías en accesibilidad de sistemas, aplicaciones, Web y documentos digitales</li>
-                        <li>Asistencia técnica y mantenimiento de herramientas tiflotecnológicas</li>
-                    </ul>
-                </article>
-                <article class="trabajo trabajo_anterior">
-                    <h3 class="titulo_trabajo">Coordinador de la Unidad de Apoyo Tecnológico</h3>
-                    <p class="descipcion_trabajo">2011 - 2014. Centro de Estudios para la Discapacidad (CEDISC), Universidad Monteávila, Venezuela.</p>
-                    <ul>
-                        <li>Formulación, estructuración e impartición de cursos de informática para personas con discapacidad visual</li>
-                        <li>Asesorías a profesores y estudiantes UMA sobre aspectos relativos a la discapacidad visual y tecnología</li>
-                        <li>Adaptación de materiales educativos y de evaluación a formatos accesibles (braille, audio, web, etc)</li>
-                        <li>Administración del Aula Virtual de los diplomados del CEDISC-UMA, en la plataforma Moodle</li>
-                    </ul>
-                </article>
-                <article class="trabajo trabajo_anterior">
-                    <h3 class="titulo_trabajo">Coordinador Ejecutivo Proyecto ÁGORA Guatemala</h3>
-                    <p class="descipcion_trabajo">2008 - 2009. Ministerio de Trabajo y Previsión Social de Guatemala, FOAL, AECID, ANCG. Guatemala.</p>
-                    <ul>
-                        <li>Gestión administrativa y financiera del proyecto</li>
-                        <li>Diseño de estrategias de identificación y registro de beneficiarios</li>
-                        <li>Coordinación técnica de acciones formativas, de inserción laboral y adaptación a puestos de trabajo</li>
-                        <li>Elaboración y presentación de informes técnicos y de gestión administrativa</li>
-                    </ul>
-                </article>
-                <article class="trabajo trabajo_anterior">
-                    <h3 class="titulo_trabajo">Asistente Técnico Regional para Centro América y República Dominicana</h3>
-                    <p class="descipcion_trabajo">2006 - 2007. Proyecto @lis Red Social. UE, FOAL, SG/OEA Guatemala, Guatemala.</p>
-                    <ul>
-                        <li>Asesoría técnica y adiestramiento en la instalación del equipamiento (hardware y software) de los Centros de Recursos de la región</li>
-                        <li>Revisión, corrección y aprobación de manuales de cursos de capacitación</li>
-                        <li>Supervisión y seguimiento técnico, docente y estadístico de los centros de recursos</li>
-                        <li>Registro de problemas y propuesta de acciones correctivas de la plataforma de formación Red Social</li>
-                    </ul>
-                </article>
-                <article class="trabajo trabajo_anterior">
-                    <h3 class="titulo_trabajo">Asistente de Imprenta Braille</h3>
-                    <p class="descipcion_trabajo">1997 - 2006. Unidad de Producción Bibliográfica del Comité Prociegos y Sordos de Guatemala. Guatemala.</p>
-                    <ul>
-                        <li>Registro y control de materiales para impresión braille y conversión a audio digital</li>
-                        <li>Digitalización y corrección de documentos</li>
-                        <li>Adaptación de textos, cuadros y diagramas para impresión en braille</li>
-                        <li>Conversión e impresión de documentos en braille</li>
-                        <li>Adaptación y conversión de textos en audio digital</li>
-                    </ul>
-                </article>
+                <div class="trabajos">
+                    <article class="trabajo trabajo_actual">
+                        <h3 class="titulo_trabajo">Profesor de Informática (Microsoft Office niveles básico e intermedio)</h3>
+                        <p class="descipcion_trabajo">2020 abril a la fecha. Programa ÁGORA Argentina. Buenos Aires, Argentina.</p>
+                        <ul>
+                            <li>Formulación de propuestas formativas</li>
+                            <li>Impartición de clases</li>
+                            <li>Creación de contenidos teórico-prácticos</li>
+                            <li>Evaluación de participantes</li>
+                            <li>Rendición de informe cursos</li>
+                        </ul>
+                    </article>
+                    <article class="trabajo trabajo_actual">
+                        <h3 class="titulo_trabajo">Asesor, Facilitador y Técnico (Freelance) en informática y herramientas informáticas para ciegos, Diseño, Maquedatoción y Accesibilidad Web</h3>
+                        <p class="descipcion_trabajo">2014 a la fecha. Argentina / Venezuela / Guatemala</p>
+                        <ul>
+                            <li>Asesoramiento en el uso de herramientas tecnológicas para ciegos</li>
+                            <li>Facilitación de cursos de informática de nivel inicial e intermedio</li>
+                            <li>Testeos y Asesorías en accesibilidad de sistemas, aplicaciones, Web y documentos digitales</li>
+                            <li>Asistencia técnica y mantenimiento de herramientas tiflotecnológicas</li>
+                        </ul>
+                    </article>
+                    <article class="trabajo trabajo_anterior">
+                        <h3 class="titulo_trabajo">Coordinador de la Unidad de Apoyo Tecnológico</h3>
+                        <p class="descipcion_trabajo">2011 - 2014. Centro de Estudios para la Discapacidad (CEDISC), Universidad Monteávila, Venezuela.</p>
+                        <ul>
+                            <li>Formulación, estructuración e impartición de cursos de informática para personas con discapacidad visual</li>
+                            <li>Asesorías a profesores y estudiantes UMA sobre aspectos relativos a la discapacidad visual y tecnología</li>
+                            <li>Adaptación de materiales educativos y de evaluación a formatos accesibles (braille, audio, web, etc)</li>
+                            <li>Administración del Aula Virtual de los diplomados del CEDISC-UMA, en la plataforma Moodle</li>
+                        </ul>
+                    </article>
+                    <article class="trabajo trabajo_anterior">
+                        <h3 class="titulo_trabajo">Coordinador Ejecutivo Proyecto ÁGORA Guatemala</h3>
+                        <p class="descipcion_trabajo">2008 - 2009. Ministerio de Trabajo y Previsión Social de Guatemala, FOAL, AECID, ANCG. Guatemala.</p>
+                        <ul>
+                            <li>Gestión administrativa y financiera del proyecto</li>
+                            <li>Diseño de estrategias de identificación y registro de beneficiarios</li>
+                            <li>Coordinación técnica de acciones formativas, de inserción laboral y adaptación a puestos de trabajo</li>
+                            <li>Elaboración y presentación de informes técnicos y de gestión administrativa</li>
+                        </ul>
+                    </article>
+                    <article class="trabajo trabajo_anterior">
+                        <h3 class="titulo_trabajo">Asistente Técnico Regional para Centro América y República Dominicana</h3>
+                        <p class="descipcion_trabajo">2006 - 2007. Proyecto @lis Red Social. UE, FOAL, SG/OEA Guatemala, Guatemala.</p>
+                        <ul>
+                            <li>Asesoría técnica y adiestramiento en la instalación del equipamiento (hardware y software) de los Centros de Recursos de la región</li>
+                            <li>Revisión, corrección y aprobación de manuales de cursos de capacitación</li>
+                            <li>Supervisión y seguimiento técnico, docente y estadístico de los centros de recursos</li>
+                            <li>Registro de problemas y propuesta de acciones correctivas de la plataforma de formación Red Social</li>
+                        </ul>
+                    </article>
+                    <article class="trabajo trabajo_anterior">
+                        <h3 class="titulo_trabajo">Asistente de Imprenta Braille</h3>
+                        <p class="descipcion_trabajo">1997 - 2006. Unidad de Producción Bibliográfica del Comité Prociegos y Sordos de Guatemala. Guatemala.</p>
+                        <ul>
+                            <li>Registro y control de materiales para impresión braille y conversión a audio digital</li>
+                            <li>Digitalización y corrección de documentos</li>
+                            <li>Adaptación de textos, cuadros y diagramas para impresión en braille</li>
+                            <li>Conversión e impresión de documentos en braille</li>
+                            <li>Adaptación y conversión de textos en audio digital</li>
+                        </ul>
+                    </article>
+                </div>
+                <input class="btn_mas_trabajos" id="mas_trabajos" type="button" value="ver más trabajos">
             </section>
-            <section class="seccion_contenido">
+            <section class="contenido_seccion">
                 <h2 id="cursos">Mis Cursos</h2>
-                <article class="curso">
-                    <section class="logo">
-                        <figure>
-                            <img class="logo_curso" src="" alt="">
-                        </figure>
-                    </section>
-                    <h3 class="titulo_curso">Primeros pasos del desarrollo frontend</h3>
-                    <p class="descipcion_curso">2023 enero. Argentina Programa, plataforma Ticmas, Argentina.</p>
-                </article>
-                <article class="curso">
-                    <section class="logo">
-                        <figure>
-                            <img class="logo_curso" src="" alt="">
-                        </figure>
-                    </section>
-                    <h3 class="titulo_curso">Curso Introducción Colaboración en Proyectos con Git y GitHub</h3>
-                    <p class="descipcion_curso">2022 junio – julio. Fundación itgrarte, Buenos Aires, Argentina (12 horas).</p>
-                </article>
-                <article class="curso">
-                    <section class="logo">
-                        <figure>
-                            <img class="logo_curso" src="" alt="">
-                        </figure>
-                    </section>
-                    <h3 class="titulo_curso">Curso Software Testing</h3>
-                    <p class="descipcion_curso">2021 septiembre – diciembre. UTN-UBA, Buenos Aires, Argentina (48 horas).</p>
-                </article>
-                <article class="curso curso_anterior">
-                    <section class="logo">
-                        <figure>
-                            <img class="logo_curso" src="" alt="">
-                        </figure>
-                    </section>
-                    <h3 class="titulo_curso">Curso Introducción a la programación con Python</h3>
-                    <p class="descipcion_curso">2021 septiembre – octubre. Fundación itgrarte, Buenos Aires, Argentina (12 horas).</p>
-                </article>
-                <article class="curso curso_anterior">
-                    <section class="logo">
-                        <figure>
-                            <img class="logo_curso" src="" alt="">
-                        </figure>
-                    </section>
-                    <h3 class="titulo_curso">Curso de Microsoft Excel 2010 – Avanzado</h3>
-                    <p class="descipcion_curso">2019 noviembre – diciembre. CAPACITARTE, UBA, Buenos Aires, Argentina (20 horas).</p>
-                </article>
-                <article class="curso curso_anterior">
-                    <section class="logo">
-                        <figure>
-                            <img class="logo_curso" src="" alt="">
-                        </figure>
-                    </section>
-                    <h3 class="titulo_curso">Curso de Estrategias de Ventas</h3>
-                    <p class="descipcion_curso">2019 julio. CAPACITARTE FCE/UBA Buenos Aires Argentina (12 horas).</p>
-                </article>
-                <article class="curso curso_anterior">
-                    <section class="logo">
-                        <figure>
-                            <img class="logo_curso" src="" alt="">
-                        </figure>
-                    </section>
-                    <h3 class="titulo_curso">Taller para nuevos autores, escritura creativa de cuento</h3>
-                    <p class="descipcion_curso">2015 mayo – noviembre. Editorial Monte Ávila Editores Latinoamericana, Venezuela (48 horas).</p>
-                </article>
-                <article class="curso curso_anterior">
-                    <section class="logo">
-                        <figure>
-                            <img class="logo_curso" src="" alt="">
-                        </figure>
-                    </section>
-                    <h3 class="titulo_curso">III Curso de Formación en Nuevas Tecnologías para Personas con Discapacidad Visual</h3>
-                    <p class="descipcion_curso">2006 mayo. Proyecto @LIS Red Social. FOAL, UE, AECID. Centro de Formación AECID Santa Cruz de la Sierra, Bolivia (40 horas)</p>
-                </article>
+                <div class="cursos">
+                    <article class="curso curso_reciente">
+                        <section>
+                            <figure class="logo">
+                                <img class="curso_logo" src="img/front-end.png" alt="">
+                            </figure>
+                        </section>
+                        <section class="curso_info">
+                            <h3 class="titulo_curso">Primeros pasos del desarrollo frontend</h3>
+                            <p class="descipcion_curso">2023 enero. Argentina Programa, plataforma Ticmas, Argentina.</p>
+                        </section>
+                    </article>
+                    <article class="curso curso_reciente">
+                        <section class="logo">
+                            <figure>
+                                <img class="curso_logo" src="img/logo_github.png" alt="">
+                            </figure>
+                        </section>
+                        <section class="curso_info">
+                            <h3 class="titulo_curso">Curso Introducción Colaboración en Proyectos con Git y GitHub</h3>
+                            <p class="descipcion_curso">2022 junio – julio. Fundación itgrarte, Buenos Aires, Argentina (12 horas).</p>
+                        </section>
+                    </article>
+                    <article class="curso curso_anterior">
+                        <section class="logo">
+                            <figure>
+                                <img class="curso_logo" src="img/Software_Testing.png" alt="">
+                            </figure>
+                        </section>
+                        <section class="curso_info">
+                            <h3 class="titulo_curso">Curso Software Testing</h3>
+                            <p class="descipcion_curso">2021 septiembre – diciembre. UTN-BA, Buenos Aires, Argentina (48 horas).</p>
+                        </section>
+                    </article>
+                    <article class="curso curso_anterior">
+                        <section class="logo">
+                            <figure>
+                                <img class="curso_logo" src="img/logo_Python.png" alt="">
+                            </figure>
+                        </section>
+                        <section class="curso_info">
+                            <h3 class="titulo_curso">Curso Introducción a la programación con Python</h3>
+                            <p class="descipcion_curso">2021 septiembre – octubre. Fundación itgrarte, Buenos Aires, Argentina (12 horas).</p>
+                        </section>
+                    </article>
+                    <article class="curso curso_anterior">
+                        <section class="logo">
+                            <figure>
+                                <img class="curso_logo" src="img/logo_capacitarte_uba.png" alt="">
+                            </figure>
+                        </section>
+                        <section class="curso_info">
+                            <h3 class="titulo_curso">Curso de Microsoft Excel 2010 – Avanzado</h3>
+                            <p class="descipcion_curso">2019 noviembre – diciembre. CAPACITARTE, UBA, Buenos Aires, Argentina (20 horas).</p>
+                        </section>
+                    </article>
+                    <article class="curso curso_anterior">
+                        <section class="logo">
+                            <figure>
+                                <img class="curso_logo" src="img/logo_capacitarte_uba.png" alt="">
+                            </figure>
+                        </section>
+                        <section class="curso_info">
+                            <h3 class="titulo_curso">Curso de Estrategias de Ventas</h3>
+                            <p class="descipcion_curso">2019 julio. CAPACITARTE FCE/UBA Buenos Aires Argentina (12 horas).</p>
+                        </section>
+                    </article>
+                    <article class="curso curso_anterior">
+                        <section class="logo">
+                            <figure>
+                                <img class="curso_logo" src="img/logo_monte_avila_editores.jpg" alt="">
+                            </figure>
+                        </section>
+                        <section class="curso_info">
+                            <h3 class="titulo_curso">Taller para nuevos autores, escritura creativa de cuento</h3>
+                            <p class="descipcion_curso">2015 mayo – noviembre. Editorial Monte Ávila Editores Latinoamericana, Venezuela (48 horas).</p>
+                        </section>
+                    </article>
+                    <article class="curso curso_anterior">
+                        <section class="logo">
+                            <figure>
+                                <img class="curso_logo" src="img/red_social.png" alt="">
+                            </figure>
+                        </section>
+                        <section class="curso_info">
+                            <h3 class="titulo_curso">III Curso de Formación en Nuevas Tecnologías para Personas con Discapacidad Visual</h3>
+                            <p class="descipcion_curso">2006 mayo. Proyecto @LIS Red Social. FOAL, UE, AECID. Centro de Formación AECID Santa Cruz de la Sierra, Bolivia (40 horas)</p>
+                        </section>
+                    </article>
+                </div>
+                <input class="btn_mas_cursos" id="mas_cursos" type="button" value="ver más cursos">
             </section>
-            <section class="seccion_contenido">
+            <section class="contenido_seccion habilidades">
                 <h2 id="habilidades">Mis Habilidades</h2>
                 <ul>
                     <li class="item_habilidades">orientación al logro</li>
                     <li class="item_habilidades">planificación y organización</li>
                     <li class="item_habilidades">liderazgo</li>
                     <li class="item_habilidades">trabajo en equipo y cooperación</li>
+                    <li class="item_habilidades">resolución de problemas</li>
+                    <li class="item_habilidades">puntualidad</li>
+                    <li class="item_habilidades">proactividad</li>
                     <li class="item_habilidades">creatividad</li>
+                    <li class="item_habilidades">buena expresión oral y escrita</li>
                 </ul>
             </section>
-            <section class="seccion_contenido">
+            <section class="contenido_seccion hobbies">
                 <h2 id="hobbies">Mis Hobbies</h2>
                 <ul>
-                    <li class="item_hobbies"></li>
-                    <li class="item_hobbies"></li>
-                    <li class="item_hobbies"></li>
-                    <li class="item_hobbies"></li>
-                    <li class="item_hobbies"></li>
+                    <li class="item_hobbies">Leer Novela, cuento y crónica</li>
+                    <li class="item_hobbies">Escuchar y descubrir música</li>
+                    <li class="item_hobbies">leer y ver tutoriales de tecnología</li>
+                    <li class="item_hobbies">Un buen partido de fútbol</li>
+                    <li class="item_hobbies">Ver series de criminalística y médicas</li>
                 </ul>
             </section>
         </article>

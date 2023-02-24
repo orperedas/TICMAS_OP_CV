@@ -5,7 +5,7 @@
 
 :root{
     --color1: #EDEAE8;
-    --color2: #FBF9F7;
+    --color2: #FAF8F6;
     --color3: #ffffff;
     --color4: #235B3F;
     --color5: #111111;
@@ -25,20 +25,16 @@
 
 /* Reglas para etiquetas */
 
-a{
-    color: var(--color4)
-}
 body{
     background-color: var(--color1);
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     color: var(--color5);
-    
+    scroll-behavior: smooth;
 }
 
-button{
-    display: inline-block;
-    margin: 0 auto;
+a{
+    color: var(--color4)
 }
 
 footer,
@@ -82,14 +78,14 @@ main{
 }
 
 nav{
-    height: 2.5em;
+    height: auto;
     width: 100vw;
     text-align: center;
 }
 nav ul>li{
     display: inline-block;
     margin: 0;
-    padding: 0 0.1em;
+    padding: 0;
     list-style-position: initial;
     list-style-type: none;
     
@@ -141,12 +137,14 @@ p{
 .trabajo:nth-last-child(1){
     border-bottom: none;
 }
-.cursos{
+.cursos_recientes,
+.cursos_anteriores{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .curso{
     display: flex;
     flex-direction: row;
@@ -160,9 +158,16 @@ p{
     width: 3.25em;
     height: 3.25em;
 }
-.curso_anterior,
-.trabajo_anterior{
+.cursos_anteriores,
+.trabajos_anteriores{
     display: none;
+}
+
+.mostrar_trabajos_anteriores{
+    display: block;
+}
+.mostrar_cursos_anteriores{
+    display: flex;
 }
 
 .habilidades ul,

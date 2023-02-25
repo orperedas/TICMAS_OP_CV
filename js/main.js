@@ -16,13 +16,6 @@ function masCursos(btn_mas_cursos, cursos_anteriores){
     });
 }
 
-
-document.addEventListener("DOMContentLoaded", (e) => {
-    masTrabajos(".btn_mas_trabajos", ".trabajos_anteriores");
-    masCursos(".btn_mas_cursos", ".cursos_anteriores")
-})
-
-
 function botonTrabajosTexto(){
     let valor_trabajos = document.getElementById("ver_mas_trabajos");
     if (valor_trabajos.value === "Ver historial completo"){
@@ -42,3 +35,11 @@ function botonCursosTexto(){
         valor_cursos.value = "Ver todos los cursos";
     }
 }
+
+
+document.addEventListener("DOMContentLoaded", (e) => {
+    masTrabajos(".btn_mas_trabajos", ".trabajos_anteriores");
+    masCursos(".btn_mas_cursos", ".cursos_anteriores")
+})
+
+

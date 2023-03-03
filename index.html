@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Otto Pereda - mi CV</title>
     <link rel="stylesheet" href="css/estilos.css">
-    <script src="js/main.js" title="text/javascript"></script>
+    <link rel="stylesheet" href="css/fontawesome_css/all.css" crossorigin="anonymous">
 </head>
 <body>
     <header>
         <input type="checkbox" id="menu_check">
         <label for="menu_check" id="menu">
-            <span id="menu_abrir">&#9776; Menú</span>
-            <span id="menu_cerrar">&#88; Cerrar</span>
+            <span id="menu_abrir"><i class="fa-solid fa-bars"></i>Menú</span>
+            <span id="menu_cerrar"><i class="fa-solid fa-xmark"></i>Cerrar</span>
         </label>
         <nav class="nav_fixed">
             <ul class="lista">
-                <li class="item_nav"><a href="#academico">Académico</a></li>
-                <li class="item_nav"><a href="#laboral">Historia laboral</a></li>
-                <li class="item_nav"><a href="#cursos">Cursos</a></li>
-                <li class="item_nav"><a href="#habilidades">Habilidades</a></li>
-                <li class="item_nav"><a href="#hobbies">Hobbies</a></li>
+                <li class="item_nav"><a href="#academico"><i class="fa-solid fa-graduation-cap"></i>Académico</a></li>
+                <li class="item_nav"><a href="#laboral"><i class="fa-solid fa-briefcase"></i>Historia laboral</a></li>
+                <li class="item_nav"><a href="#cursos"><i class="fa-solid fa-award"></i>Cursos</a></li>
+                <li class="item_nav"><a href="#habilidades"><i class="fa-sharp fa-solid fa-screwdriver-wrench"></i></i>Habilidades</a></li>
+                <li class="item_nav"><a href="#hobbies"><i class="fa-solid fa-puzzle-piece"></i>Hobbies</a></li>
             </ul>
         </nav>
         <article class="intro">
@@ -208,33 +208,47 @@
             <section class="contenido_seccion habilidades" id="habilidades">
                 <h2>Mis Habilidades</h2>
                 <ul>
-                    <li class="item_habilidades">orientación al logro</li>
-                    <li class="item_habilidades">planificación y organización</li>
-                    <li class="item_habilidades">liderazgo</li>
-                    <li class="item_habilidades">trabajo en equipo y cooperación</li>
-                    <li class="item_habilidades">resolución de problemas</li>
-                    <li class="item_habilidades">puntualidad</li>
-                    <li class="item_habilidades">proactividad</li>
-                    <li class="item_habilidades">creatividad</li>
-                    <li class="item_habilidades">buena expresión oral y escrita</li>
+                    <li class="item_habilidades"><i class="fa-solid fa-trophy"></i>orientación al logro</li>
+                    <li class="item_habilidades"><i class="fa-solid fa-list-check"></i>planificación y organización</li>
+                    <li class="item_habilidades"><i class="fa-solid fa-users-gear"></i>liderazgo</li>
+                    <li class="item_habilidades"><i class="fa-solid fa-people-group"></i>trabajo en equipo y cooperación</li>
+                    <li class="item_habilidades"><i class="fa-solid fa-handshake"></i>resolución de problemas</li>
+                    <li class="item_habilidades"><i class="fa-solid fa-clock"></i>puntualidad</li>
+                    <li class="item_habilidades"><i class="fa-solid fa-user-plus"></i>proactividad</li>
+                    <li class="item_habilidades"><i class="fa-solid fa-wand-magic-sparkles"></i>creatividad</li>
+                    <li class="item_habilidades"><i class="fa-solid fa-user-pen"></i>buena expresión oral y escrita</li>
                 </ul>
             </section>
             <section class="contenido_seccion hobbies" id="hobbies">
                 <h2>Mis Hobbies</h2>
                 <ul>
-                    <li class="item_hobbies">Leer Novela, cuento y crónica</li>
-                    <li class="item_hobbies">Escuchar y descubrir música</li>
-                    <li class="item_hobbies">leer y ver tutoriales de tecnología</li>
-                    <li class="item_hobbies">Un buen partido de fútbol</li>
-                    <li class="item_hobbies">Ver series de criminalística y médicas</li>
+                    <li class="item_hobbies"><i class="fa-solid fa-book-open-reader"></i>Leer Novela, cuento y crónica</li>
+                    <li class="item_hobbies"><i class="fa-solid fa-music"></i>Escuchar y descubrir música</li>
+                    <li class="item_hobbies"><i class="fa-solid fa-keyboard"></i>Escribir cuento y microficción</li>
+                    <li class="item_hobbies"><i class="fa-solid fa-laptop-code"></i>leer y ver tutoriales de tecnología</li>
+                    <li class="item_hobbies"><i class="fa-solid fa-futbol"></i>Un buen partido de fútbol</li>
+                    <li class="item_hobbies"><i class="fa-solid fa-tv"></i>Ver series de criminalística y médicas</li>
                 </ul>
             </section>
         </article>
     </main>
-    <footer>
-        <section class="redes_sociales">
-            <i class="fa-brands fa-facebook"></i>
+    <footer class="footer">
+        <section class="contenido">
+            <article class="redes_sociales">
+                <h2>Redes Sociales</h2>
+                <ul>
+                    <li><a href="https://www.facebook.com/otto.pereda">Facebook</a></li>
+                    <li><a href="https://twitter.com/orperedas">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/in/otto-pereda/">Linkedin</a></li>
+                    <li><a href="https://codepen.io/orperedas/">CodePen</a></li>
+                    <li><a href="https://github.com/orperedas/">GitHub</a></li>
+                </ul>
+            </article>
+            <article class="copyright">
+                <p>Copyright - Otto Pereda, con la tecnología de GitHub - 2023</p>
+            </article>
         </section>
     </footer>
+    <script src="js/main.js" title="text/javascript"></script>
 </body>
 </html>
